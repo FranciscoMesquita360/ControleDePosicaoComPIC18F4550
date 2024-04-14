@@ -1,0 +1,1322 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\controle_da_direcao_2.0.X.production.obj
+cinit CODE 0 1BB8 1BB8 70 1
+intcode_body CODE 0 820 820 49A 1
+text0 CODE 0 CBA CBA 2DC 1
+text1 CODE 0 13BA 13BA 14E 1
+text2 CODE 0 1DE4 1DE4 44 1
+text3 CODE 0 1D46 1D46 54 1
+text4 CODE 0 1E28 1E28 3C 1
+text5 CODE 0 1C28 1C28 6E 1
+text6 CODE 0 1F90 1F90 A 1
+text7 CODE 0 1508 1508 116 1
+text8 CODE 0 161E 161E F6 1
+text9 CODE 0 19E2 19E2 B0 1
+text10 CODE 0 1E9E 1E9E 38 1
+text11 CODE 0 1D9A 1D9A 4A 1
+text12 CODE 0 1ED6 1ED6 32 1
+text13 CODE 0 1C96 1C96 5A 1
+text14 CODE 0 1F82 1F82 E 1
+text15 CODE 0 1F60 1F60 22 1
+text16 CODE 0 1E64 1E64 3A 1
+text17 CODE 0 1F08 1F08 30 1
+text19 CODE 0 F96 F96 278 1
+text20 CODE 0 1714 1714 F4 1
+text21 CODE 0 1808 1808 F4 1
+text22 CODE 0 1CF0 1CF0 56 1
+text23 CODE 0 18FC 18FC E6 1
+text24 CODE 0 120E 120E 1AC 1
+text25 CODE 0 1B40 1B40 78 1
+text26 CODE 0 1A92 1A92 AE 1
+text27 CODE 0 1F38 1F38 28 1
+idataCOMRAM CODE 0 1F9A 1F9A 3 1
+cstackCOMRAM COMRAM 1 1 1 48 1
+cstackBANK0 BANK0 1 AF AF 37 1
+cstackBANK1 BANK1 1 110 110 9 1
+temp COMRAM 1 5F 5F 1 1
+bitbssCOMRAM COMRAM 1 2F0 5E 1 1
+bssBANK0 BANK0 1 60 60 4F 1
+bssBANK1 BANK1 1 100 100 10 1
+intcode CODE 0 8 8 6 1
+smallconst SMALLCONST 0 800 800 20 1
+idataBANK0 CODE 0 1F9D 1F9D 3 1
+dataBANK0 BANK0 1 E6 E6 3 1
+dataCOMRAM COMRAM 1 5B 5B 3 1
+bssCOMRAM COMRAM 1 49 49 12 1
+$C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E9-FF 1
+RAM 119-7FF 1
+SFR F60-FFF 1
+BANK0 E9-FF 1
+BANK1 119-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 12-7FF 1
+CONST 1FA0-62AF 1
+STACK 119-7FF 1
+SMALLCONST 1FA0-62AF 1
+CODE 4-7 1
+CODE 12-7FF 1
+CODE 1FA0-62AF 1
+BIGRAM E9-FF 1
+BIGRAM 119-7FF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1FA0-62AF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\controle_da_direcao_2.0.X.production.obj
+8 intcode CODE >137:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+8 intcode CODE >113:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F38 text27 CODE >78:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F3A text27 CODE >79:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F3E text27 CODE >80:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F46 text27 CODE >81:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F48 text27 CODE >82:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F4C text27 CODE >85:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1A92 text26 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A92 text26 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AA2 text26 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AB0 text26 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AB0 text26 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AB2 text26 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1ABA text26 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1ABA text26 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AD8 text26 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AD8 text26 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1ADA text26 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AE6 text26 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AEE text26 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1AEE text26 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B0C text26 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B0C text26 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B0E text26 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B16 text26 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B16 text26 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B20 text26 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B22 text26 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B24 text26 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B28 text26 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B2C text26 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B30 text26 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B32 text26 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1B40 text25 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B40 text25 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B44 text25 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B48 text25 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B4C text25 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B5C text25 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B60 text25 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B62 text25 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B6C text25 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B6E text25 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B6E text25 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+1B92 text25 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
+120E text24 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+120E text24 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1222 text24 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1236 text24 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1252 text24 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1260 text24 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+127C text24 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+128A text24 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+128E text24 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1290 text24 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1292 text24 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1294 text24 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1296 text24 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1298 text24 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12A4 text24 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12A6 text24 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12B2 text24 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12BA text24 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12C2 text24 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12C4 text24 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12DC text24 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12DC text24 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12E4 text24 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12E6 text24 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12E6 text24 CODE >116:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12F0 text24 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+12F8 text24 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1300 text24 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1302 text24 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+131A text24 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+131A text24 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1322 text24 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1324 text24 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1324 text24 CODE >127:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+132C text24 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1330 text24 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+133C text24 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1348 text24 CODE >133:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1348 text24 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+134C text24 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1358 text24 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1364 text24 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1364 text24 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1368 text24 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1374 text24 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1378 text24 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1384 text24 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1390 text24 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1394 text24 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+1394 text24 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+18FC text23 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+18FC text23 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1916 text23 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1924 text23 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+193E text23 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+194C text23 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1958 text23 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+195E text23 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1962 text23 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1966 text23 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+196A text23 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+196C text23 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1978 text23 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+197A text23 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1986 text23 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+198A text23 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+198A text23 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1992 text23 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+19A2 text23 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+19AE text23 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+19B0 text23 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+19B0 text23 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+19B8 text23 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+19BC text23 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+1CF0 text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1CF0 text22 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D00 text22 CODE >120:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D00 text22 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D04 text22 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D14 text22 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D1E text22 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D28 text22 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D34 text22 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1D44 text22 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+1808 text21 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1808 text21 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1822 text21 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1830 text21 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+184A text21 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1858 text21 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+185E text21 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1862 text21 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1866 text21 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+186A text21 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+186C text21 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+186E text21 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+187A text21 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1886 text21 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+188A text21 CODE >135:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+188A text21 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+188E text21 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+189A text21 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18A2 text21 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18AA text21 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18AE text21 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18B2 text21 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18B2 text21 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18B6 text21 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18C2 text21 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18CA text21 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18D2 text21 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+18D6 text21 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1714 text20 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1714 text20 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+172E text20 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1740 text20 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1766 text20 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1768 text20 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1774 text20 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1782 text20 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1786 text20 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+178A text20 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1794 text20 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17A6 text20 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17B0 text20 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17B4 text20 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17B6 text20 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17BC text20 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17CE text20 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17CE text20 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17D8 text20 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17DA text20 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17DA text20 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17E0 text20 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17E6 text20 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+17F6 text20 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+F96 text19 CODE >88:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F96 text19 CODE >90:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+FD2 text19 CODE >91:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+FE2 text19 CODE >94:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1062 text19 CODE >95:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+10DC text19 CODE >96:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1188 text19 CODE >97:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11AA text19 CODE >99:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11AE text19 CODE >101:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11BE text19 CODE >102:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11BE text19 CODE >103:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11D0 text19 CODE >105:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11E0 text19 CODE >106:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11E0 text19 CODE >107:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11EC text19 CODE >108:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+11FC text19 CODE >109:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+820 intcode_body CODE >113:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+86A intcode_body CODE >114:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+86E intcode_body CODE >115:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+88A intcode_body CODE >116:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+88C intcode_body CODE >117:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+898 intcode_body CODE >118:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+8A0 intcode_body CODE >119:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+8B4 intcode_body CODE >120:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+8BC intcode_body CODE >121:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+8D0 intcode_body CODE >123:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+8F6 intcode_body CODE >124:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+900 intcode_body CODE >125:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+900 intcode_body CODE >126:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+926 intcode_body CODE >127:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+930 intcode_body CODE >128:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+930 intcode_body CODE >129:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+944 intcode_body CODE >134:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+962 intcode_body CODE >135:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+964 intcode_body CODE >136:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+966 intcode_body CODE >138:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+97E intcode_body CODE >139:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+986 intcode_body CODE >141:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+986 intcode_body CODE >142:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+988 intcode_body CODE >143:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+98A intcode_body CODE >145:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+9A2 intcode_body CODE >146:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+9B8 intcode_body CODE >149:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+9DC intcode_body CODE >150:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+9E0 intcode_body CODE >151:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+9F0 intcode_body CODE >152:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+9F0 intcode_body CODE >155:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A14 intcode_body CODE >156:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A18 intcode_body CODE >157:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A28 intcode_body CODE >158:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A28 intcode_body CODE >161:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A2C intcode_body CODE >162:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A44 intcode_body CODE >163:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A46 intcode_body CODE >164:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A4E intcode_body CODE >165:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A4E intcode_body CODE >167:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A68 intcode_body CODE >168:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A6A intcode_body CODE >169:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A6E intcode_body CODE >170:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A70 intcode_body CODE >171:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A88 intcode_body CODE >172:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A88 intcode_body CODE >173:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+A9C intcode_body CODE >174:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+AAC intcode_body CODE >175:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+AAE intcode_body CODE >176:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+AB0 intcode_body CODE >177:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+AB2 intcode_body CODE >179:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+ACA intcode_body CODE >180:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+AE4 intcode_body CODE >183:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B12 intcode_body CODE >184:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B3A intcode_body CODE >185:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B44 intcode_body CODE >188:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B46 intcode_body CODE >191:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B48 intcode_body CODE >192:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B4A intcode_body CODE >193:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B4A intcode_body CODE >195:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B70 intcode_body CODE >196:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B88 intcode_body CODE >197:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B98 intcode_body CODE >198:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B9A intcode_body CODE >199:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+B9C intcode_body CODE >201:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+BB4 intcode_body CODE >202:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+BCE intcode_body CODE >203:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+BCE intcode_body CODE >206:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+BFE intcode_body CODE >207:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C26 intcode_body CODE >208:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C30 intcode_body CODE >210:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C36 intcode_body CODE >211:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C38 intcode_body CODE >212:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C3A intcode_body CODE >213:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C3C intcode_body CODE >215:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C54 intcode_body CODE >216:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C6E intcode_body CODE >219:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+C6E intcode_body CODE >221:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F08 text17 CODE >117:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F0C text17 CODE >118:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F12 text17 CODE >119:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F16 text17 CODE >120:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F16 text17 CODE >121:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F18 text17 CODE >123:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F1C text17 CODE >124:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F20 text17 CODE >125:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F20 text17 CODE >126:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F22 text17 CODE >128:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F26 text17 CODE >129:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F2A text17 CODE >130:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F2A text17 CODE >131:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F2C text17 CODE >133:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F30 text17 CODE >134:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F34 text17 CODE >135:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F34 text17 CODE >136:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E64 text16 CODE >87:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E64 text16 CODE >91:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E70 text16 CODE >93:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E7C text16 CODE >95:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E7E text16 CODE >96:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E80 text16 CODE >97:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E82 text16 CODE >98:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E84 text16 CODE >99:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E86 text16 CODE >93:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E8C text16 CODE >91:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F60 text15 CODE >138:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F64 text15 CODE >139:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F66 text15 CODE >140:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F6E text15 CODE >141:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F70 text15 CODE >142:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F7E text15 CODE >143:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F80 text15 CODE >144:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F82 text14 CODE >145:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F82 text14 CODE >146:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F88 text14 CODE >147:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1F8E text14 CODE >148:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C96 text13 CODE >149:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C9A text13 CODE >151:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CA2 text13 CODE >152:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CA8 text13 CODE >153:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CAE text13 CODE >154:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CB4 text13 CODE >155:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CBA text13 CODE >156:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CC2 text13 CODE >157:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CCE text13 CODE >158:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CD4 text13 CODE >159:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CDA text13 CODE >160:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CE0 text13 CODE >161:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CE6 text13 CODE >162:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1CEE text13 CODE >163:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1ED6 text12 CODE >104:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1ED6 text12 CODE >108:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1EE2 text12 CODE >110:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1EEE text12 CODE >112:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1EF0 text12 CODE >110:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1EF6 text12 CODE >108:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1D9A text11 CODE >182:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1D9E text11 CODE >184:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DA6 text11 CODE >185:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DAC text11 CODE >186:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DAE text11 CODE >187:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DB6 text11 CODE >188:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DB8 text11 CODE >189:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DC6 text11 CODE >190:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DC8 text11 CODE >191:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DD0 text11 CODE >192:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DD2 text11 CODE >193:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DE0 text11 CODE >194:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1DE2 text11 CODE >195:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E9E text10 CODE >196:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E9E text10 CODE >198:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1EAA text10 CODE >199:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1EBC text10 CODE >198:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+19E2 text9 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+19E2 text9 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+19F4 text9 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A02 text9 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A02 text9 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A04 text9 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A0C text9 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A0C text9 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A2A text9 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A2A text9 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A2C text9 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A38 text9 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A40 text9 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A40 text9 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A5E text9 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A5E text9 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A60 text9 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A68 text9 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A68 text9 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A72 text9 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A74 text9 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A76 text9 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A7A text9 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A7E text9 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A82 text9 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+1A84 text9 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+161E text8 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+161E text8 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+163A text8 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1648 text8 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1662 text8 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1670 text8 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1676 text8 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+167A text8 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+167E text8 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1682 text8 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1684 text8 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1686 text8 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1692 text8 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+169E text8 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16A2 text8 CODE >135:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16A2 text8 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16A6 text8 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16B2 text8 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16BA text8 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16C2 text8 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16C6 text8 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16CA text8 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16CA text8 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16CE text8 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16DA text8 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16E2 text8 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16EA text8 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+16EE text8 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+1508 text7 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1508 text7 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1526 text7 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+153A text7 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1566 text7 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+156A text7 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1576 text7 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+158E text7 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1592 text7 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1596 text7 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15A0 text7 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15B4 text7 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15C0 text7 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15C4 text7 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15C6 text7 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15CC text7 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15E0 text7 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15E0 text7 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15EC text7 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15EE text7 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15EE text7 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15F6 text7 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+15FC text7 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+160C text7 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1F90 text6 CODE >73:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F90 text6 CODE >74:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F94 text6 CODE >75:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1F98 text6 CODE >76:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1C28 text5 CODE >165:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C28 text5 CODE >166:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C2E text5 CODE >167:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C3C text5 CODE >168:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C42 text5 CODE >169:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C50 text5 CODE >170:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C56 text5 CODE >171:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C64 text5 CODE >172:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C6A text5 CODE >174:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C70 text5 CODE >175:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C76 text5 CODE >176:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C7C text5 CODE >177:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C82 text5 CODE >178:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C88 text5 CODE >179:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C8E text5 CODE >180:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1C94 text5 CODE >181:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\LCD.h
+1E28 text4 CODE >223:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E28 text4 CODE >224:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E2C text4 CODE >226:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E30 text4 CODE >227:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E34 text4 CODE >228:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E38 text4 CODE >229:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E3C text4 CODE >230:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E40 text4 CODE >231:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E42 text4 CODE >232:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E46 text4 CODE >233:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E4A text4 CODE >234:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E4C text4 CODE >235:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E4E text4 CODE >237:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E52 text4 CODE >238:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E56 text4 CODE >239:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E5A text4 CODE >240:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E5E text4 CODE >241:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E60 text4 CODE >242:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1E62 text4 CODE >243:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1D46 text3 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D46 text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D50 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D58 text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D5C text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D5E text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D64 text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D66 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D66 text3 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D6A text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D70 text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D7C text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D84 text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D86 text3 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D86 text3 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D8C text3 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D90 text3 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1D98 text3 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1DE4 text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DE4 text2 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DEE text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DF2 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DF4 text2 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DFA text2 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DFC text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1DFC text2 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1E00 text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1E0C text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1E14 text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1E1A text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1E1E text2 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1E26 text2 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+13BA text1 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13BA text1 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13C4 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13C6 text1 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13CE text1 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13DE text1 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13E0 text1 CODE >543:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13E0 text1 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13E4 text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+140A text1 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+140A text1 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1422 text1 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1426 text1 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+142A text1 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1432 text1 CODE >1264:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1432 text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+143E text1 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+145E text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1462 text1 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+146E text1 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+147E text1 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1482 text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1484 text1 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14CA text1 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14DA text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14DA text1 CODE >1525:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14E2 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14FA text1 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+CBA text0 CODE >248:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CBA text0 CODE >249:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CBC text0 CODE >250:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CBE text0 CODE >251:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CC0 text0 CODE >252:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CC4 text0 CODE >254:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CC6 text0 CODE >260:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CD4 text0 CODE >261:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CE0 text0 CODE >262:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+CEC text0 CODE >264:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+D28 text0 CODE >265:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+D66 text0 CODE >266:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DA4 text0 CODE >269:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DA6 text0 CODE >270:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DA8 text0 CODE >271:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DAA text0 CODE >272:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DAC text0 CODE >273:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DAE text0 CODE >274:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DB4 text0 CODE >275:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DB8 text0 CODE >277:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DBA text0 CODE >278:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DBC text0 CODE >279:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DBE text0 CODE >280:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DC0 text0 CODE >281:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DC2 text0 CODE >282:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DC4 text0 CODE >283:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DCE text0 CODE >284:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DCE text0 CODE >285:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DD2 text0 CODE >286:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DDC text0 CODE >287:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DDC text0 CODE >288:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DE0 text0 CODE >289:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DEA text0 CODE >290:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DEA text0 CODE >291:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DEE text0 CODE >292:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+DF0 text0 CODE >293:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E0A text0 CODE >294:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E0A text0 CODE >295:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E1E text0 CODE >296:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E20 text0 CODE >298:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E34 text0 CODE >299:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E4C text0 CODE >300:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E6A text0 CODE >301:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E6A text0 CODE >303:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E80 text0 CODE >305:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E98 text0 CODE >306:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+E9C text0 CODE >307:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+EC2 text0 CODE >308:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+ECE text0 CODE >309:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+EDC text0 CODE >310:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F02 text0 CODE >311:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F0E text0 CODE >312:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F1C text0 CODE >313:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F42 text0 CODE >314:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F4E text0 CODE >315:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F5C text0 CODE >316:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F7A text0 CODE >317:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F86 text0 CODE >318:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+F94 text0 CODE >284:C:\Users\francisco\OneDrive\Projetos\MplabX Projects\controle da direcao 2.0.X\main.c
+1BB8 cinit CODE >656:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BB8 cinit CODE >658:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BB8 cinit CODE >661:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BB8 cinit CODE >783:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BBA cinit CODE >784:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BBC cinit CODE >785:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BBE cinit CODE >786:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BC0 cinit CODE >787:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BC2 cinit CODE >788:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BC4 cinit CODE >789:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BC6 cinit CODE >790:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BCA cinit CODE >791:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BCC cinit CODE >792:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BD0 cinit CODE >793:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BD2 cinit CODE >794:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BD6 cinit CODE >798:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BD8 cinit CODE >799:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BDA cinit CODE >800:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BDC cinit CODE >801:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BDE cinit CODE >802:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BE0 cinit CODE >803:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BE2 cinit CODE >804:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BE4 cinit CODE >805:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BE8 cinit CODE >806:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BEA cinit CODE >807:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BEE cinit CODE >808:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BF0 cinit CODE >809:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BF4 cinit CODE >813:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BF8 cinit CODE >814:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BFA cinit CODE >815:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BFA cinit CODE >816:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BFC cinit CODE >817:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1BFE cinit CODE >818:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C00 cinit CODE >821:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C04 cinit CODE >822:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C06 cinit CODE >823:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C06 cinit CODE >824:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C08 cinit CODE >825:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C0A cinit CODE >826:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C0C cinit CODE >829:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C0E cinit CODE >832:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C12 cinit CODE >833:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C14 cinit CODE >834:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C14 cinit CODE >835:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C16 cinit CODE >836:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C18 cinit CODE >837:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C1A cinit CODE >843:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C1A cinit CODE >845:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C1C cinit CODE >846:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C1E cinit CODE >848:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C20 cinit CODE >849:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C22 cinit CODE >850:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+1C24 cinit CODE >851:C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_T E6 0 BANK0 1 dataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_d 2F0 -292 COMRAM 1 bitbssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwmod@counter D1 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hspace_1 2F1 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul@f3_as_product 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Init 1C28 0 CODE 0 text5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Port 1F08 0 CODE 0 text17 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv@exp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_atraso_ms 1E9E 0 CODE 0 text16 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_atraso_us 1F08 0 CODE 0 text12 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_fb 74 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_k1 90 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_k2 8C 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_k3 88 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_kd 94 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ki 97 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_kp 9A 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Init 1C96 0 CODE 0 text5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Port 1F38 0 CODE 0 text17 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_atraso_ms 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_atraso_us 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lmax 5D 0 COMRAM 1 dataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lmin 5C 0 COMRAM 1 dataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+_buf2 100 0 BANK1 1 bssBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_main CBA 0 CODE 0 text0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_out0 53 0 COMRAM 1 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+btemp 5F 0 COMRAM 1 temp dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Write_Char 1D9A 0 CODE 0 text11 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftadd@f1 22 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftadd@f2 25 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+start E 0 CODE 0 init C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Port@a C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___fttol@exp1 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___fttol@lval 38 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_BandaMorta 5B 0 COMRAM 1 dataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Write_Char@temp CB 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv@f1 13 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv@f2 16 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv@f3 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_atraso_ms 1E64 0 CODE 0 text16 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_atraso_us 1ED6 0 CODE 0 text12 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hpowerup E 0 CODE 0 powerup dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pbitbssCOMRAM 2F0 -292 COMRAM 1 bitbssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_ADC_init 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_ADC_read 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+intlevel0 0 0 CODE 0 text C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+intlevel1 0 0 CODE 0 text C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+intlevel2 0 0 CODE 0 text C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+intlevel3 0 0 CODE 0 text C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_USBDIV$1 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+wtemp6 60 0 COMRAM 1 temp dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\controle_da_direcao_2.0.X.production.obj
+_tick_time 49 0 COMRAM 1 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pidataCOMRAM 1F9A 0 CODE 0 idataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul@f1 CE 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul@f2 D1 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Write_Char 1DE4 0 CODE 0 text11 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+__size_of___altoft 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_CCPR1L FBE 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\controle_da_direcao_2.0.X.production.obj
+___altoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___lmul 1D46 0 CODE 0 text22 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\controle_da_direcao_2.0.X.production.obj
+_integral 80 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___fttol@f1 DD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADC_init 1F90 0 CODE 0 text6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADC_read 1F38 0 CODE 0 text27 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwmod@divisor CF 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___ftadd 13BA 0 CODE 0 text24 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___ftdiv 19E2 0 CODE 0 text23 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___ftmul 1714 0 CODE 0 text8 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___fttol 161E 0 CODE 0 text7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___lwdiv 1D9A 0 CODE 0 text3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___lwmod 1E28 0 CODE 0 text2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+atraso_us@valor C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_ADC_init 1F9A 0 CODE 0 text6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_ADC_read 1F60 0 CODE 0 text27 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_dpowers 801 0 SMALLCONST 0 smallconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_ofi2___ftpack 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+?i2___ftmul 13 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+?i2___fttol 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PID_set_PF F96 0 CODE 0 text19 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwdiv@quotient CB 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+atraso_us@i C8 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+atraso_us@j CA 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_setup 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Set_Cursor@temp D0 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwmod@dividend CD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\controle_da_direcao_2.0.X.production.obj
+?i2___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+start_initialization 1BB8 0 CODE 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___altoft 1B40 0 CODE 0 text25 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul@exp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___altoft 1BB8 0 CODE 0 text25 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Write_String 1E9E 0 CODE 0 text10 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pcstackBANK0 AF 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pcstackBANK1 110 0 BANK1 1 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___fttol@exp1 115 0 BANK1 1 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___fttol@lval 111 0 BANK1 1 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftpack 19E2 0 CODE 0 text9 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftpack@arg C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftpack@exp C9 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of___ftpack 1A92 0 CODE 0 text9 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwdiv@counter CA 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul@cntr 20 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul@sign 21 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_PID_set_PF 120E 0 CODE 0 text19 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+__end_of_sprintf 1508 0 CODE 0 text1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+ADC_read@canal 5 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftadd@exp1 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftadd@exp2 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftadd@sign 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftpack@sign 5 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PORTBbits F81 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PORTEbits F84 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hinit 12 0 CODE 0 init dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htemp 60 0 COMRAM 1 temp dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Linit E 0 CODE 0 init dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltemp 5F 0 COMRAM 1 temp dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lmul 1CF0 0 CODE 0 text22 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+int$flags 5F 0 COMRAM 1 temp dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PR2 FCB 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__S1 119 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_aux 51 0 COMRAM 1 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_buf 9F 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_enS 9D 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_pwm 4D 0 COMRAM 1 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ref 78 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+?_ADC_read 1 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_PLLDIV$1 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___fttol@sign1 37 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@val DF 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Write_String 1ED6 0 CODE 0 text10 dist/default/production\controle_da_direcao_2.0.X.production.obj
+int_func 820 0 CODE 0 intcode_body dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Clear 1F90 0 CODE 0 text14 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Write_String@a CE 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Write_String@i D0 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pdataBANK0 E6 0 BANK0 1 dataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Cmd 1F82 0 CODE 0 text15 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___altoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___altoft@exp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@flag DD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@prec DE 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext10 1E9E 0 CODE 0 text10 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext11 1D9A 0 CODE 0 text11 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext12 1ED6 0 CODE 0 text12 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext13 1C96 0 CODE 0 text13 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext14 1F82 0 CODE 0 text14 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext15 1F60 0 CODE 0 text15 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext16 1E64 0 CODE 0 text16 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext17 1F08 0 CODE 0 text17 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext19 F96 0 CODE 0 text19 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext20 1714 0 CODE 0 text20 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext21 1808 0 CODE 0 text21 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext22 1CF0 0 CODE 0 text22 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext23 18FC 0 CODE 0 text23 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext24 120E 0 CODE 0 text24 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext25 1B40 0 CODE 0 text25 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext26 1A92 0 CODE 0 text26 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext27 1F38 0 CODE 0 text27 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Clear 1F82 0 CODE 0 text14 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Write_Char 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Set_Cursor 1C96 0 CODE 0 text13 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftadd 120E 0 CODE 0 text24 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv 18FC 0 CODE 0 text23 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul 161E 0 CODE 0 text8 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___fttol 1508 0 CODE 0 text7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pintcode_body 820 0 CODE 0 intcode_body dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwdiv 1D46 0 CODE 0 text3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwmod 1DE4 0 CODE 0 text2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___ftpack C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_interrupcoes 8 0 CODE 0 intcode dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwdiv@divisor C8 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\controle_da_direcao_2.0.X.production.obj
+atraso_ms@i1 C8 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+atraso_ms@j1 CA 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+stacklo 119 0 ABS 0 - C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_ofi2___ftmul 18FC 0 CODE 0 text21 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_ofi2___fttol 1808 0 CODE 0 text20 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_ofi2___ftmul 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_ofi2___fttol 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul@cntr DB 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pbssCOMRAM 49 0 COMRAM 1 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul@sign DC 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+main@estado 117 0 BANK1 1 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+end_of_initialization 1C1A 0 CODE 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_PID_set_PF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_interrupcoes 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_Lcd_Set_Cursor 1CF0 0 CODE 0 text13 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Set_Cursor@a CD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Set_Cursor@b CC 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Set_Cursor@y CF 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Set_Cursor@z CE 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lwdiv@dividend C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___ftadd 22 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___ftdiv 13 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___ftmul CE 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___fttol DD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___lwdiv C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+?___lwmod CD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul 1808 0 CODE 0 text21 dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___fttol 1714 0 CODE 0 text20 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+?_PID_set_PF 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pcinit 1BB8 0 CODE 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext0 CBA 0 CODE 0 text0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext1 13BA 0 CODE 0 text1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext2 1DE4 0 CODE 0 text2 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext3 1D46 0 CODE 0 text3 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext4 1E28 0 CODE 0 text4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext5 1C28 0 CODE 0 text5 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext6 1F90 0 CODE 0 text6 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext7 1508 0 CODE 0 text7 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext8 161E 0 CODE 0 text8 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ptext9 19E2 0 CODE 0 text9 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\FRANCI~1\AppData\Local\Temp\s9jc.obj
+_sprintf 13BA 0 CODE 0 text1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_interrupcoes CBA 0 CODE 0 intcode_body dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lpowerup E 0 CODE 0 powerup dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul@f1 13 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftmul@f2 16 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@ap DB 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@sp D2 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+_delay1000 60 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_derivativo 7C 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___ftpack 1A92 0 CODE 0 text26 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul@exp D7 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of__initialization 1C1A 0 CODE 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_delay100 70 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_delay500 6C 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_delay501 68 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_delay502 64 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Cmd@a CB 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pidataBANK0 1F9D 0 CODE 0 idataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+i2___fttol@f1 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\controle_da_direcao_2.0.X.production.obj
+___altoft@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftpack@sign CA 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv@cntr 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftdiv@sign 21 0 COMRAM 1 cstackCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Init 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__size_of_Lcd_Port 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@c E1 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+sprintf@f D4 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_main F96 0 CODE 0 text0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_dpowers 80B 0 SMALLCONST 0 smallconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+_CMCON FB4 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+?_sprintf D2 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_of_setup 1E64 0 CODE 0 text4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_erro0 57 0 COMRAM 1 bssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+_erro1 84 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+_setup 1E28 0 CODE 0 text4 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_CCP1CON FBD 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+___fttol@sign1 110 0 BANK1 1 cstackBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+_Lcd_Cmd 1F60 0 CODE 0 text15 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__LbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__initialization 1BB8 0 CODE 0 cinit dist/default/production\controle_da_direcao_2.0.X.production.obj
+atraso_ms@val C6 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__pdataCOMRAM 5B 0 COMRAM 1 dataCOMRAM dist/default/production\controle_da_direcao_2.0.X.production.obj
+__end_ofi2___ftpack 1B40 0 CODE 0 text26 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hsmallconst 820 0 SMALLCONST 0 smallconst dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\controle_da_direcao_2.0.X.production.obj
+_CCP1CONbits FBD 0 ABS 0 - dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Write_Char@a CD 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+Lcd_Write_Char@y CC 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\controle_da_direcao_2.0.X.production.obj
+__Hintcode E 0 CODE 0 intcode dist/default/production\controle_da_direcao_2.0.X.production.obj
+___ftmul@f3_as_product D8 0 BANK0 1 cstackBANK0 dist/default/production\controle_da_direcao_2.0.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+intcode_body 0 820 820 1780 1
+cstackCOMRAM 1 1 1 5F 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 89 1
+bssBANK1 1 100 100 19 1
+intcode 0 8 8 A 1
+smallconst 0 800 800 20 1
+config 0 300000 300000 E 1
